@@ -1,0 +1,5 @@
+// HOME
+@mixin homeHoverColorMx{
+    color:$homeHoverColor;
+    border-bottom: 2px solid $homeHoverColor;
+}

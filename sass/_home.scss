@@ -1,0 +1,80 @@
+// SECTION HOME
+.home{
+height:100vh;
+background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),url('../images/eagle.png');
+background-repeat: no-repeat;
+background-position: center, top center;
+background-size:cover;
+    .home__navigation--main{
+        background: rgba(231, 131, 130, .5);
+        .home__navigation--logo{
+            color:#fff;
+            font-weight:$bold;
+            font-family:$montserrat;
+            font-size:2rem;
+        }
+        .home__navigation--mobile-button{
+            .home__navigation--mobile-icon{
+                color:#fff;
+            }
+        }
+        .home__navigation--list .nav-link{
+            color:#fff;
+            font-family:$montserrat;
+            font-size:1rem;
+            text-transform: uppercase;
+            &:hover{
+               @include homeHoverColorMx;
+            }
+        }
+        .home__navigation--list .navigation--list-icon-cart{
+            color:#fff;
+            font-size:1.1rem;
+            height:40px;
+        }
+        .home__navigation--list .navigation--list-search{
+            border:none;
+            width:26px;
+            height:26px;
+            background: transparent;
+            background-image: url('../images/search_icon.svg');
+            background-repeat:no-repeat;
+            background-size: contain;
+            outline:0;
+            -webkit-appearance: textfield;
+        }
+    }
+}
+.home .home__navigation--main .home__navigation--list .nav-item:last-child .nav-link{
+    .navigation--list-search{
+        cursor:pointer;
+    }
+  &:hover{
+      border-bottom:none;
+      background-color:$homeHoverColor;
+      border-radius:50%;
+      cursor:pointer;
+    
+  }
+}
+
+// Mobile menu
+
+@media screen and (max-width:991.98px){
+    .home .home__navigation--main .home__navigation--list .nav-link{
+        text-align:center;
+        &:hover{
+           border-bottom:none;
+        }
+    }
+    .home .home__navigation--main .home__navigation--list .nav-item:last-child .nav-link{
+        &:hover{
+            background: transparent;
+        }
+    }
+    .navbar-light .navbar-toggler{
+        border-color:transparent;
+        outline:0;
+    }
+  
+}
