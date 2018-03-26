@@ -15,42 +15,93 @@
 <body>
     <!-- SECTION HOME -->
 <section id="home" class="home">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light home__navigation--main">
-    <div class="container">
-    <a class="navbar-brand home__navigation--logo" href="#">MoGo</a>
-    <button class="navbar-toggler home__navigation--mobile-button" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu"
-      aria-expanded="false" aria-label="Toggle navigation">
-  
-      <span class="home__navigation--mobile-icon"><i class="material-icons">reorder</i></span>
-    </button>
+  <div class="home__navigation--wrapper">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light home__navigation--main">
+      <div class="container">
+        <a class="navbar-brand home__navigation--logo" href="#">MoGo</a>
+        <button class="navbar-toggler home__navigation--mobile-button" type="button" data-toggle="collapse" data-target="#mobileMenu"
+          aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="home__navigation--mobile-icon">
+            <i class="material-icons">reorder</i>
+          </span>
+        </button>
 
-    <div class="collapse navbar-collapse flex-row-reverse" id="mobileMenu">
-      <ul class="navbar-nav ml-2 mt-2 home__navigation--list">
-        <li class="nav-item ml-4">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item ml-4">
-          <a class="nav-link" href="#">Service</a>
-        </li>
-        <li class="nav-item ml-4">
-          <a class="nav-link" href="#">Work</a>
-        </li>
-        <li class="nav-item ml-4">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item ml-4">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item ml-4">
-           <a class="nav-link navigation--list-icon-cart" href="#"><i class="material-icons">shopping_cart</i></a>
-        </li>
-        <li class="nav-item ml-4">
-          <a class ="nav-link" href="#"><input type="search" class="navigation--list-search"></a>
-        </li>
-      </ul>
+        <div class="collapse navbar-collapse flex-row-reverse" id="mobileMenu">
+          <ul class="navbar-nav ml-2 mt-2 home__navigation--list">
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link navigation--list-icon-cart" href="#">
+                <i class="material-icons">shopping_cart</i>
+              </a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="#">
+                <input type="search" class="navigation--list-search">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+  <header class="home__header">
+    <div id="carouselIndicators" class="carousel slide home__header--carousel" data-ride="carousel">
+      <div class="carousel-inner home__header--carousel-inner">
+        <div class="carousel-item active text-center home__header--carousel-inner-item">
+         <h2 class="home__header--carousel-title display-4">Creative Template</h2>
+         <h3 class="home__header--carousel-info display-2">Welcome<br> to Mogo</h3>
+         <span class="home__header--carousel-span mx-auto "></span>
+         <button class="home__header--carousel-button mx-auto" aria-label="Find additional info"><span>Learn More</span></button>
+         </div>
+        <div class="carousel-item text-center home__header--carousel-inner-item">
+         <h2 class="home__header--carousel-title display-4">Creative Template</h2>
+         <h3 class="home__header--carousel-info display-2">Some of<br> our work</h3>
+         <span class="home__header--carousel-span mx-auto "></span>
+         <button class="home__header--carousel-button mx-auto" aria-label="Find additional info"><span>Learn More</span></button>
+        </div>
+        <div class="carousel-item text-center home__header--carousel-inner-item">
+            <h2 class="home__header--carousel-title display-4">Creative Template</h2>
+            <h3 class="home__header--carousel-info display-2">Story<br>about us</h3>
+            <span class="home__header--carousel-span mx-auto "></span>
+            <button class="home__header--carousel-button mx-auto" aria-label="Find additional info"><span>Learn More</span></button>
+           </div>
+           <div class="carousel-item text-center home__header--carousel-inner-item">
+              <h2 class="home__header--carousel-title display-4">Creative Template</h2>
+              <h3 class="home__header--carousel-info display-2">Meet<br> our team</h3>
+              <span class="home__header--carousel-span mx-auto "></span>
+              <button class="home__header--carousel-button mx-auto" aria-label="Find additional info"><span>Learn More</span></button>
+             </div>
+      </div>
+      <ol class="carousel-indicators home__header--carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
+        </ol>
+        <ul class="home__header--carousel-desc d-flex">
+          <li><a href="#"><span>01</span>Intro</a></li>
+          <li><a href="#"><span>02</span>Work</a></li>
+          <li><a href="#"><span>03</span>About</a></li>
+          <li><a href="#"><span>04</span>Contact</a></li>
+        </ul>
     </div>
-  </div>
-  </nav>
+  
+
+  </header>
   
 </section>
 
