@@ -281,7 +281,7 @@
 
 @media screen and (max-width:339.98px) {
     .home .home__header .home__header--carousel .home__header--carousel-inner-item {
-        margin-top: 3rem;
+        margin-top: 1rem;
         .home__header--carousel-title {
             font-size: 2rem;
         }
@@ -321,4 +321,55 @@
         width:23%;
         }
     }
+}
+
+@media screen and (orientation: landscape) and (min-height:359px) and (max-height:440px) {
+    .home .home__header{
+        margin-top:-3rem;
+
+    }
+    .home .home__header .home__header--carousel .home__header--carousel-inner-item {
+        .home__header--carousel-title {
+            font-size: 1rem;
+        }
+        .home__header--carousel-info {
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+    }
+    .home .home__header .carousel.home__header--carousel .home__header--carousel-desc{
+        position:relative;
+         li{
+             margin-top:1.5rem;
+         }
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height:358.98px) {
+    .home .home__header{
+        margin-top:-5rem;
+
+    }
+    .home .home__header .home__header--carousel .home__header--carousel-inner-item {
+        .home__header--carousel-title {
+            font-size: 1rem;
+        }
+        .home__header--carousel-info {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        .home__header--carousel-button{
+            width:7rem;
+            height:1.5rem;
+            font-size: .7rem;
+            bottom:20px;
+        }
+    }
+    .home .home__header .carousel.home__header--carousel .home__header--carousel-desc{
+        position:relative;
+         li{
+             margin-top:.5rem;
+         }
+    }
+    
 }
