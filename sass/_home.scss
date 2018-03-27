@@ -177,8 +177,10 @@
 
 /* MEDIA QUERIES */
 
-
+// ==============================
 /* MOBILE MENU */
+//    - LARGE DEVICES
+// ==============================
 
 @media screen and (max-width:991.98px) {
     .home .home__navigation--wrapper .home__navigation--main {
@@ -201,9 +203,32 @@
     }
 }
 
-
+// ===================================
 /* MOBILE CAROUSEL */
+// ===================================
 
+/* LARGE DEVICES */
+@media screen and (min-width:992px) and (max-width:1198.98px) {
+    .home .home__header .carousel.home__header--carousel .home__header--carousel-desc{
+        width:74%;
+        li{
+        width:22%;
+        }
+    }
+}
+
+/* MEDIUM DEVICES */
+@media screen and (min-width:768px) and (max-width:991.98px) {
+    .home .home__header .carousel.home__header--carousel .home__header--carousel-desc{
+        width:75%;
+        margin-left:9%;
+        li{
+        width:23%;
+        }
+    }
+}
+
+/* SMALL DEVICES */
 @media screen and (min-width:576px) and (max-width:767.98px) {
     .home .home__header .home__header--carousel  .home__header--carousel-inner-item .home__header--carousel-info {
         margin-top: 2rem;
@@ -223,6 +248,8 @@
         }
     }
 }
+
+/* EXTRASMALL DEVICES WIDER THAN 480px */
 
 @media screen and (min-width:480px) and (max-width:575.98px) {
     .home .home__header .home__header--carousel .home__header--carousel-inner-item {
@@ -249,6 +276,8 @@
         }
     }
 }
+
+/* EXTRASMALL DEVICES BETWEEN 340px AND 480px */
 
 @media screen and (min-width:340px) and (max-width:479.98px) {
     .home .home__header .home__header--carousel .home__header--carousel-inner-item {
@@ -279,6 +308,8 @@
     }
 }
 
+/* EXTRA SMALL DEVICES UP TO 340px WIDTH */
+
 @media screen and (max-width:339.98px) {
     .home .home__header .home__header--carousel .home__header--carousel-inner-item {
         margin-top: 1rem;
@@ -305,23 +336,7 @@
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1198.98px) {
-    .home .home__header .carousel.home__header--carousel .home__header--carousel-desc{
-        width:74%;
-        li{
-        width:22%;
-        }
-    }
-}
-@media screen and (min-width:768px) and (max-width:991.98px) {
-    .home .home__header .carousel.home__header--carousel .home__header--carousel-desc{
-        width:75%;
-        margin-left:9%;
-        li{
-        width:23%;
-        }
-    }
-}
+/* EXTRASMALL DEVICES LANDSCAPE ORIENTED BETWEEN 359px and 440px */
 
 @media screen and (orientation: landscape) and (min-height:359px) and (max-height:440px) {
     .home .home__header{
@@ -345,6 +360,7 @@
     }
 }
 
+/* EXTRASMALL DEVICES LANDSCAPE ORIENTED UP TO 359px WIDTH */
 @media screen and (orientation: landscape) and (max-height:358.98px) {
     .home .home__header{
         margin-top:-5rem;
