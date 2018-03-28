@@ -1,5 +1,42 @@
-// HOME
+// ====================
+// HOME SECTION 
+// ====================
+
+// Home Hover Color
+
 @mixin homeHoverColorMx{
     color:$homeHoverColor;
     border-bottom: 2px solid $homeHoverColor;
+}
+
+// =====================
+// ABOUT US SECTION
+// =====================
+
+// SECTION INTRO HEADINGS
+
+@mixin sectionIntroTitle{
+    font-size:1.5rem;
+    font-family: $kaushanScript;
+    color: #333333;
+}
+@mixin sectionIntroDesc{
+    font-size:1.875rem;
+    font-family: $montserrat;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+}
+@mixin sectionIntroHorizontalBar{
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $navBackground;
+    margin:3rem 0;
+}
+@mixin sectionIntroText{
+    font-family: $roboto;
+    line-height:1.5rem;
+    color:#999;
+    font-size:.9375rem;
 }

@@ -1,0 +1,154 @@
+.about {
+    height: 1000px;
+    .about__intro {
+        margin-top: 6rem;
+        &--title {
+            @include sectionIntroTitle;
+        }
+        &--desc {
+            @include sectionIntroDesc;
+        }
+        span {
+            @include sectionIntroHorizontalBar;
+        }
+        &--text {
+            @include sectionIntroText;
+        }
+    }
+    .about__content {
+        margin: 6.25rem 0;
+        .about__content--image-container {
+            height: auto;
+            position: relative;
+            z-index: 10;
+            &:hover {
+                transform: translate(-10px, -10px);
+                transition: all 0.5s;
+                box-shadow: 10px 10px 0 0 $aboutSectionColor;
+            }
+            .about__content--image {
+                max-width: 100%;
+                height: auto;
+            }
+            .about__content--image-hover {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                img {
+                    display: none;
+                }
+                &:hover {
+                    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+                    box-shadow: -1px -1px 0 0 $aboutSectionColor;
+                    img {
+                        display: flex;
+                    }
+                    &:after {
+                        content: 'super team';
+                        text-transform: uppercase;
+                        font-family: $montserrat;
+                        font-weight: 700;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .about__greenBar {
+        width: 100vw;
+        height: 270px;
+        background: $aboutSectionColor;
+        &--container {
+            height: 270px;
+            border-left: 1px solid #fff;
+            flex-basis: 240px;
+            span {
+                font-family: $montserrat;
+                color: #fff;
+                font-size: 4.5rem;
+                font-weight: 700;
+            }
+            p {
+                font-family: $montserrat;
+                color: #fff;
+                font-size: .875rem;
+                text-transform: uppercase;
+            }
+        }
+        &--container:last-child {
+            border-right: 1px solid #fff;
+        }
+    }
+}
+
+/* MEDIA QUERIES  */
+
+
+/* IMAGE */
+
+@media screen and (min-width:767.98px) and (max-width:991.99px) {
+    .about .about__content {
+        margin-top: 3.25rem;
+    }
+}
+
+@media screen and (max-width:767.99px) {
+    .about__content {
+        .row {
+            margin-top: -5rem;
+            .about__content--image-container {
+                width: 380px;
+                margin: 0 auto;
+                .about__content--image {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576.99px) {
+    .about__content .row .about__content--image-container {
+        width: 285px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:339.99px) {
+    .about__content .row .about__content--image-container {
+        width: 190px;
+        margin: 0 auto;
+    }
+}
+
+/* GREEN BAR */
+
+@media screen and (min-width:992px) and (max-width:1199.99px) {
+    .about {
+        .about__greenBar {
+            &--container {
+                flex-basis: 190px
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991.99px) {
+    .about {
+        .about__greenBar {
+            &--container {
+                flex-basis: 140px;
+                span {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: .675rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
