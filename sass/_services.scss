@@ -11,64 +11,103 @@
             @include sectionIntroHorizontalBar;
         }
     }
-    .services__container{
-        &>div{
-            margin-bottom:2rem;
+    .services__container {
+        &>div {
+            margin-bottom: 2rem;
         }
-        .services__icon{
-            &--photo{
-             background: url('../images/alarm.png') top center no-repeat;
+        .services__icon {
+            &--photo {
+                background: url('../images/alarm.png') top center no-repeat;
             }
-            &--design{
-             background: url('../images/line-graph.png') top center no-repeat;
+            &--design {
+                background: url('../images/line-graph.png') top center no-repeat;
             }
-            &--creativity{
-             background: url('../images/computer---ok.png') top center no-repeat;
-            }   
-            &--seo{
+            &--creativity {
+                background: url('../images/computer---ok.png') top center no-repeat;
+            }
+            &--seo {
                 background: url('../images/book-2.png') top center no-repeat;
             }
-            &--web{
+            &--web {
                 background: url('../images/home.png') top center no-repeat;
             }
-            &--digital{
+            &--digital {
                 background: url('../images/image.png') top center no-repeat;
-            }      
-        }
-        .services__text{
-            &--title{
-                font-family: $montserrat;
-                color:$textHeaderColor;
-                font-size:$fontSizeText;
-                text-transform: uppercase;
-                font-weight:700;
             }
-            &--desc{
-                font-family:$roboto;
-                line-height:1.5rem;
-                color:$textParagraphColor;
+        }
+        .services__text {
+            &--title {
+                font-family: $montserrat;
+                color: $textHeaderColor;
+                font-size: $fontSizeText;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            &--desc {
+                font-family: $roboto;
+                line-height: 1.5rem;
+                color: $textParagraphColor;
                 font-size: .9375rem;
-
             }
         }
     }
 }
-.services .services--border{
-    padding-bottom:1.5rem;
-    border-bottom:1px solid #e5e5e5;
+
+.services .services--border {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
 }
+
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width:767.99px) {
-    .services .services--border{
-        border-bottom:none;
-        padding-bottom:0;
+    .services .services--border {
+        border-bottom: none;
+        padding-bottom: 0;
     }
 }
 
 @media screen and (min-width:768px) {
-    .services .row.services__container div:nth-child(n+4){
-        margin-top:1rem;
+    .services .row.services__container div:nth-child(n+4) {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199.99px) {
+    .services {
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991.99px) {
+    .services {
+        margin-top: -12rem;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767.99px) {
+    .services {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width:575.99px) {
+    .services {
+        margin-top: -1rem;
+        .services__intro {
+            &--title {
+                font-size: $fontSizeTitleXs;
+            }
+            &--desc {
+                font-size: $fontSizeDescXs;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:340px) {
+    .services {
+        margin-top: -11rem;
     }
 }
