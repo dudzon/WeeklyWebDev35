@@ -1,0 +1,43 @@
+.wallpaper {
+    margin-top: -8rem;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.95) 100%), url('../images/wallpaper.png');
+    background-size: cover;
+    .wallpaper__intro {
+        padding-top: 6rem;
+        &--title {
+            @include sectionIntroTitle;
+        }
+        &--desc {
+            @include sectionIntroDesc;
+        }
+        span {
+            @include sectionIntroHorizontalBar;
+        }
+    }
+    .wallpaper__tablet {
+        height: auto;
+        max-width: 100%;
+    }
+    .wallpaper__mobile {
+        position: absolute;
+        height: auto;
+        max-width: 100%;
+        top: 465px;
+        left: 700px;
+    }
+}
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (min-width:992px) and (max-width:1199.99px) {
+    .wallpaper .wallpaper__mobile {
+        left: 605px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991.99px) {
+    .wallpaper .wallpaper__mobile {
+        left: 485px;
+    }
+}
