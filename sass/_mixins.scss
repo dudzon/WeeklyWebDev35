@@ -39,4 +39,21 @@
     line-height:1.5rem;
     color:#999;
     font-size:.9375rem;
+    text-align: center; 
+}
+@mixin accordionCardHeader{
+    text-transform:uppercase;
+    font-family: $montserrat;
+    color:#333;
+    font-size:.875rem;
+    cursor:pointer;
+    font-weight:700;
+}
+@mixin accordionIcon{
+    content:"";
+    display:block;
+    background-repeat: no-repeat;
+    width:30px;
+    height:30px;
+    margin-right:10px;  
 }
