@@ -118,6 +118,14 @@
     .serviceTwo{
         height:50rem;
         margin-top:14rem;
+        .serviceTwo__intro {
+            &--title {
+                font-size: $fontSizeTitleXs;
+            }
+            &--desc {
+                font-size: $fontSizeDescXs;
+            }
+        }
     }
     .serviceTwo .serviceTwo__content .serviceTwo__content--accordion{
         margin-top:-3rem;
@@ -129,4 +137,15 @@
         margin-top:20rem;
     }
 }
-
+@media screen and (orientation:landscape) and (max-height:440px) and (max-width:767.99px){
+    .serviceTwo{
+        .serviceTwo__intro{
+            &--title{
+                font-size:$fontSizeTitleXs;
+            }
+            &--desc{
+                font-size:$fontSizeDescXs;
+            }
+        }
+    }
+}    

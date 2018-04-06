@@ -111,3 +111,15 @@
         margin-top: -11rem;
     }
 }
+@media screen and (orientation:landscape) and (max-height:440px) and (max-width:767.99px){
+    .services{
+        .services__intro{
+            &--title{
+                font-size:$fontSizeTitleXs;
+            }
+            &--desc{
+                font-size:$fontSizeDescXs;
+            }
+        }
+    }
+}   

@@ -132,7 +132,18 @@
         margin: 0 auto;
     }
 }
-
+@media screen and (orientation:landscape) and (max-height:440px) and (max-width:767.99px){
+    .about{
+        .about__intro{
+            &--title{
+                font-size:$fontSizeTitleXs;
+            }
+            &--desc{
+                font-size:$fontSizeDescXs;
+            }
+        }
+    }
+}   
 
 /* GREEN BAR */
 
