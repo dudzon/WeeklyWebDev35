@@ -57,3 +57,11 @@
     height:30px;
     margin-right:10px;  
 }
+@mixin teamName{
+    color: #333333;
+    font-family: $montserrat;
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top:2rem;
+}
