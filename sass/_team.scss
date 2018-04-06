@@ -1,0 +1,167 @@
+.team{
+    height:62.5rem;
+    .team__intro {
+        margin-top: 6rem;
+        &--title {
+            @include sectionIntroTitle;
+        }
+        &--desc {
+            @include sectionIntroDesc;
+        }
+        span {
+            @include sectionIntroHorizontalBar;
+        }
+        &--text {
+            @include sectionIntroText;
+        }
+    }
+    .team__content {
+        margin: 6.25rem 0;
+        .team__content--image-container {
+            height: auto;
+            position: relative;
+            z-index: 10;
+            &:hover {
+                transform: translate(-10px, -10px);
+                transition: all 0.5s;
+                box-shadow: 10px 10px 0 0 $aboutSectionColor;
+            }
+            .team__content--image {
+                max-width: 100%;
+                height: auto;
+            }
+            .team__content--image-hover {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                    .team__content--image-icon{
+                        width:3.5rem;
+                        height:3.5rem;
+                        background:$homeHoverColor;
+                        position:relative;
+                        display: none;
+                        img{
+                            position:absolute;
+                            top:50%;
+                            left:50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                    .team__content--image-icon:first-child{
+                        background:$navBackground;
+                    }   
+                &:hover {
+                    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+                    box-shadow: -1px -1px 0 0 $aboutSectionColor;
+                    .team__content--image-icon{
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .team__content--person{
+            @include teamName;
+        }
+        .team__content--job{
+            @include sectionIntroText;
+            font-style:italic;
+        }
+    }
+}
+
+/* MEDIA QUERIES  */
+
+
+
+@media screen and (min-width:992px) and (max-width:1199.99px) {
+    .team  {
+        margin-top:6rem;
+    }
+
+}
+
+@media screen and (min-width:767.98px) and (max-width:991.99px) {
+    .team{
+        margin-top:18rem;
+    }
+    .team .team__content {
+        margin-top: 3.25rem;
+    }
+    .team .team__content .team__content--image-container .team__content--image-hover .team__content--image-icon{
+        width:2.5rem;
+        height:2.5rem;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767.99px) {
+    .team{
+        margin-top:14rem;
+        .team__content {
+            .row {
+                margin-top: -5rem;
+                .team__content--image-container {
+                    width: 285px;
+                    margin: 0 auto;
+                    .team__content--image {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:576.99px) {
+    .team {
+        margin-top:-8rem;
+        .team__intro {
+            &--title {
+                font-size: $fontSizeTitleXs;
+            }
+            &--desc {
+                font-size: $fontSizeDescXs;
+            }
+        }
+    }
+    .team .team__content{
+        margin:0;
+    }
+    .team__content .row .team__content--image-container {
+        width: 190px;
+        margin: 0 auto;
+    }
+    .team .team__content .team__content--image-container .team__content--image-hover .team__content--image-icon{
+        width:2.5rem;
+        height:2.5rem;
+    }
+    .team .team__content .team__content--person{
+        margin-top:1rem;
+    }
+    .team .team__content .team__content--job{
+        margin-bottom:1rem;
+    }
+}
+@media screen and (orientation:landscape) and (max-height:440px) and (max-width:767.99px){
+    .team{
+        margin-top:14rem;
+        .team__intro{
+            &--title{
+                font-size:$fontSizeTitleXs;
+            }
+            &--desc{
+                font-size:$fontSizeDescXs;
+            }
+        }
+    }
+    .team .team__content .row .team__content--image-container {
+        width: 190px;
+        margin: 0 auto;
+    }
+    .team .team__content .team__content--image-container .team__content--image-hover .team__content--image-icon{
+        width:2.5rem;
+        height:2.5rem;
+    }
+}
