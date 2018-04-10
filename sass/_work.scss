@@ -60,6 +60,65 @@
             }
         }
     }
+    .work__carousel{
+        height:18.125rem;
+        background: #fff;
+        position:relative;
+        &--item{
+            margin-top:4rem;
+            width:90%;
+            margin:4rem auto 0;
+            .work__carousel--image-container{
+                height:13.125rem;
+                width:40%;
+                margin-right:2rem;
+                img{
+                    max-width:100%;
+                    height:auto;
+                }
+            }
+
+        }
+        &--text{
+            color: #999;
+            font-family: $roboto;
+            font-size:1.5rem;
+            line-height:2.25rem;
+            font-weight:300;
+            font-style: italic;
+            position:relative;
+            margin:1rem 4rem 3rem 0;
+            &-indicator{
+                position:absolute;
+                display:block;
+                bottom:1rem;
+                width:60px;
+                height:3px;
+                background:red;
+            }
+            &-name{
+                display:block;
+                position:absolute;
+                font-family:$kaushanScript;
+                color:#333;
+                font-size:1.5rem;
+                bottom:0;
+                left:70px;
+            }
+        }
+        .carousel-control-prev-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ccc' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+            position: absolute;
+            top: 132px;
+            left: 0;
+        }
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ccc' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+            position: absolute;
+            top: 132px;
+            right: 20px;
+        }
+    }
 }
 
 /* MEDIA QUERIES */
@@ -131,6 +190,15 @@
 @media screen and (min-width:992px) and (max-width:1199.99px) {
     .work .work__intro {
         margin-top:-3rem;
+    }
+    .work .work__carousel--item .work__carousel--image-container{
+        width:60%;
+    }
+    .work .work__carousel--text-indicator{
+        bottom:-1rem;
+    }
+    .work .work__carousel--text-name{
+        bottom:-1.75rem;
     }
 }
 @media screen and (min-width:768px) and (max-width:991.99px) {

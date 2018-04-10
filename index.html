@@ -333,7 +333,7 @@
 <!-- SECTION QUOTATION -->
 <section class="quotation d-none d-lg-block" id="quotation">
 <div class="container">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="quotationCarouselControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="quotation__carousel--item d-flex justify-content-center">
@@ -360,11 +360,11 @@
                 </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#quotationCarouselControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#quotationCarouselControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -466,8 +466,7 @@
       <div class="col-md-3 col-sm-12">
         <div class="work__content--container">
           <picture>
-              <source media="(max-width:575.99px)" srcset="/images/work1-md.png">
-                <!-- <source media="(max-height:440px) and (max-width:767.99px) and (orientation:landscape)" srcset="/images/work1-md.png">  -->
+            <source media="(max-width:575.99px)" srcset="/images/work1-md.png">
             <source media="(min-width:576px) and (max-width:991.99px)" srcset="/images/work1-lg.png">
             <img src="/images/work1.png" alt="Photo of man" class=" img-fluid work__image">
           </picture>
@@ -478,8 +477,7 @@
         </div>
         <div class="work__content--container">
             <picture>
-                <source media="(max-width:575.99px)" srcset="/images/work3-md.png">
-                      <!-- <source media="(max-height:440px) and (max-width:767.99px) and (orientation:landscape)" srcset="/images/work1-md.png"> -->
+              <source media="(max-width:575.99px)" srcset="/images/work3-md.png">
               <source media="(min-width:576px) and (max-width:991.99px)" srcset="/images/work3-lg.png">
               <img src="/images/work3.png" alt="Photo of bridge" class=" img-fluid work__image">
             </picture>
@@ -492,8 +490,7 @@
       <div class="col-md-3 col-sm-12">
           <div class="work__content--container">
               <picture>
-                  <source media="(max-width:575.99px)" srcset="/images/work2-md.png">
-                          <!-- <source media="(max-height:440px) and (max-width:767.99px) and (orientation:landscape)" srcset="/images/work1-md.png"> -->
+                <source media="(max-width:575.99px)" srcset="/images/work2-md.png">
                 <source media="(min-width:576px) and (max-width:767.99px)" srcset="/images/work2-lg.png">
                 <img src="/images/work2.png" alt="Industrial photo" class=" img-fluid work__image">
               </picture>
@@ -504,8 +501,7 @@
             </div>
             <div class="work__content--container">
                 <picture>
-                    <source media="(max-width:575.99px)" srcset="/images/work5-md.png">
-                            <!-- <source media="(max-height:440px) and (max-width:767.99px) and (orientation:landscape)" srcset="/images/work1-md.png">  -->
+                  <source media="(max-width:575.99px)" srcset="/images/work5-md.png">
                   <source media="(min-width:576px) and (max-width:767.99px)" srcset="/images/work5-lg.png">
                   <img src="/images/work5.png" alt="Photo of building" class=" img-fluid work__image">
                 </picture>
@@ -519,8 +515,7 @@
       <div class="col-md-3 col-sm-12">
         <div class="work__content--container">
           <picture>
-              <source media="(max-width:575.99px)" srcset="/images/work4-md.png">
-                      <!-- <source media="(max-height:440px) and (max-width:767.99px) and (orientation:landscape)" srcset="/images/work1-md.png">  -->
+            <source media="(max-width:575.99px)" srcset="/images/work4-md.png">
             <source media="(min-width:576px) and (max-width:767.99px)" srcset="/images/work4-lg.png">
             <img src="/images/work4.png" alt="Photo of medusa" class=" img-fluid work__image">
           </picture>
@@ -534,7 +529,6 @@
         <div class="work__content--container">
           <picture>
           <source media="(max-width:575.99px)" srcset="/images/work6-md.png">
-            <!-- <source media="(max-height:440px) and (max-width:767.99px) and (orientation:landscape)" srcset="/images/work1-md.png">  -->
             <source media="(min-width:576px) and (max-width:767.99px)" srcset="/images/work6-lg.png">
             <img src="/images/work6.png" alt="Photo of glass roof" class=" img-fluid work__image">
           </picture>
@@ -545,8 +539,7 @@
         </div>
         <div class="work__content--container">
             <picture>
-               <source media="(max-width:575.99px)" srcset="/images/work7-md.png">
-               <!-- <source media="(max-height:440px) and (max-width:767.99px) and (orientation:landscape)" srcset="/images/work1-md.png">  -->
+              <source media="(max-width:575.99px)" srcset="/images/work7-md.png">
               <source media="(min-width:576px) and (max-width:767.99px)" srcset="/images/work7-lg.png">
               <img src="/images/work7.png" alt="Photo of modern" class=" img-fluid work__image">
             </picture>
@@ -558,6 +551,46 @@
       </div>
     </div>
 
+    <div class=" work__carousel d-none d-lg-block" id="work__carousel">
+        <div class="container">
+            <div id="workCarouselControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="work__carousel--item d-flex justify-content-center">
+                        <div class="work__carousel--image-container">
+                            <img src="../images/work__carousel.png" alt="Picture of a person" class="work__carousel--image img-fluid">
+                          </div>
+                      <p class="work__carousel--text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”<span class="work__carousel--text-indicator"></span><span class="work__carousel--text-name">Luuk van der Bergh</span></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="work__carousel--item d-flex justify-content-center" >
+                          <div class="work__carousel--image-container">
+                            <img src="../images/work__carousel.png" alt="Picture of a person" class="work__carousel--image img-fluid">
+                          </div>
+                          <p class="work__carousel--text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”<span class="work__carousel--text-indicator"></span><span class="work__carousel--text-name">Mark Smith</span></p>
+                        </div>
+                  </div>
+                  <div class="carousel-item ">
+                      <div class="work__carousel--item d-flex justify-content-center">
+                          <div class="work__carousel--image-container">
+                              <img src="../images/work__carousel.png" alt="Picture of a person" class="work__carousel--image img-fluid">
+                            </div>
+                          <p class="work__carousel--text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”<span class="work__carousel--text-indicator"></span><span class="work__carousel--text-name">Jon Doe</span></p>
+                        </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev " href="#workCarouselControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next " href="#workCarouselControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+      </div>
 
 </section>
  
