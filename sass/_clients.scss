@@ -1,0 +1,109 @@
+.clients {
+    height: 51.875rem;
+    margin-top: 3rem;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.95) 100%), url('../images/clients-bg.png');
+    background-size: cover;
+    .clients__intro {
+        padding-top: 6rem;
+        margin-bottom:4.6875rem;
+        &--title {
+            @include sectionIntroTitle;
+        }
+        &--desc {
+            @include sectionIntroDesc;
+        }
+        span {
+            @include sectionIntroHorizontalBar;
+        }
+    }
+    .clients__container{
+        .clients__image--dix{
+            background: url('../images/client1.png');
+            @include clientsImage;
+        }
+        .clients__image--karvounis{
+            background: url('../images/client2.png');
+            @include clientsImage;
+        }
+        .clients__image--castillo{
+            background: url('../images/client3.png');
+            @include clientsImage;
+        }
+        .clients__image--petrucci{
+            background: url('../images/client4.png');
+            @include clientsImage;
+        }
+        .clients__data{
+            max-width:70%;
+            &--name{
+                @include teamName;
+                margin:0;
+            }
+            &--job{
+                @include sectionIntroText;
+                font-style:italic;
+                text-align: initial;
+            }
+            span{
+                @include sectionIntroHorizontalBar;
+                margin:1rem 0 1rem;
+            }
+            &--desc{
+                @include sectionIntroText;
+                text-align: initial;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:992px) and (max-width:1199.98px){
+    .clients .clients__container .clients__image--dix,
+    .clients .clients__container .clients__image--karvounis,
+    .clients .clients__container .clients__image--castillo,
+    .clients .clients__container .clients__image--petrucci{
+        margin-right:1.875rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991.98px){
+    .clients .clients__container .clients__image--dix,
+    .clients .clients__container .clients__image--karvounis,
+    .clients .clients__container .clients__image--castillo,
+    .clients .clients__container .clients__image--petrucci{
+        max-width:35%;
+    }
+    .clients .clients__container .clients__data--name,
+    .clients .clients__container .clients__data--job,
+    .clients .clients__container .clients__data span,
+    .clients .clients__container .clients__data--desc{
+        margin-left:2rem;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767.98px){
+    .clients{
+        height: 100rem;
+    }
+   
+    .clients .clients__container{
+        flex-direction: column; 
+        height: 20.75rem;
+        margin-bottom: -2rem;
+    }
+    .clients .clients__container .clients__data{
+        margin:2rem auto 0;
+    }
+    .clients .clients__container .clients__image--dix,
+    .clients .clients__container .clients__image--karvounis,
+    .clients .clients__container .clients__image--castillo,
+    .clients .clients__container .clients__image--petrucci{
+       margin:0 auto;
+    }
+    .clients .clients__container .clients__data--job{
+        margin-left: 6.7rem;
+    }
+    .clients .clients__container .clients__data--name{
+        margin-left:6.7rem;
+    }
+   
+}
