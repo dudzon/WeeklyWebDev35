@@ -77,3 +77,10 @@
     font-size:.8125rem;
     margin-top:-.1rem;
 }
+
+@mixin footerRuler{
+    display: block;
+    width:100%;
+    height:1px;
+    background: $blogHorizontalRuler;
+}
