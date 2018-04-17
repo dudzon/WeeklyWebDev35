@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center, top center;
     background-size: cover;
+    position:relative;
     /* NAVIGATION BAR */
     .home__navigation--wrapper {
         height: 60px;
@@ -46,6 +47,13 @@
                 background-size: contain;
                 outline: 0;
                 -webkit-appearance: textfield;
+            }
+            .home__navigation--list .navigation--list-clicked{
+                background-image:none;
+                width:150px;
+                height:26px;
+                transition: 0.5s ease all;
+                }
             }
         }
     }
@@ -157,7 +165,8 @@
         }
     }
     /* CAROUSEL END */
-}
+
+
 
 
 /* NAVIGATION SEARCH ICON */
@@ -194,13 +203,17 @@
     }
     .home .home__navigation--main .home__navigation--list .nav-item:last-child .nav-link {
         &:hover {
-            background: transparent;
+            background: transparent !important;
         }
     }
     .navbar-light .navbar-toggler {
         border-color: transparent;
         outline: 0;
     }
+    nav li a.active {
+        border-bottom: none;
+        
+      }
 }
 
 // ===================================

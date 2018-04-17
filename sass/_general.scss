@@ -1,0 +1,9 @@
+body{
+    overflow-x:hidden;
+    position: relative; /* For scroll spy  */
+}
+/* Scroll Spy Effect */
+nav li a.active {
+    border-bottom: 2px solid #fce38a;
+    color: #fce38a !important ;
+  }
