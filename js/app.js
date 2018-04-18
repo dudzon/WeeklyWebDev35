@@ -10,6 +10,13 @@ $(document).ready(function() {
             'background-color': 'rgba(231, 131, 130)'
         });
     }
+    /* Not semi transparent on default mainNav background color on smaller devices */
+    if( $(window).width() < 992){
+        $mainNav.css({
+            'background-color': 'rgba(231, 131, 130)'
+        });
+    }
+    
 
     /* Change opacity of navbar color while scrolling down */
 	$(window).scroll(function() {
