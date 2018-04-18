@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	const $mainNav = $('.home__navigation--main');
-    const $mainNavHeight = $mainNav.height();
+    const $mainNavHeight = $mainNav.outerHeight();
     const $search = $('.navigation--list-search');
     const $scrollTop = $(window).scrollTop();
   
@@ -100,11 +100,26 @@ $(document).ready(function() {
     function smoothScroll(){
         removeActiveLink();
         const $sectionTo = $(this).attr('href');
-        const $navHeight = $('nav').outerHeight();
+        const $navHeight = $('nav').outerHeight(true);
         $('html,body').animate({
-          scrollTop: $($sectionTo).offset().top - $navHeight - 20
+          scrollTop: $($sectionTo).offset().top - $navHeight -20
         }, 1500);
         $(this).addClass('active');
     }
 
+    /* Scrollspy deactivation on smaller devices */
+
+    function removeScrollSpy(){
+        if ($(window).width() < 992) {
+            $('body').removeAttr('data-spy');
+         }
+         else {
+            $('body').attr('data-spy','scroll');
+         }
+    }
+
+    removeScrollSpy();
+
+
+    
 });
